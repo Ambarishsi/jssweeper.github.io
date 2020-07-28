@@ -257,7 +257,7 @@
 
       document.getElementById("score").innerHTML =
         "  Click on the tiles to start the game  ";
-        //console.log(ground);
+        console.log(ground);
     </script>
 
     <script>
@@ -294,7 +294,7 @@
           document.getElementById("score").innerHTML =
             "<h1 style='color:#F1948A'>  GAME OVER, You Scored: " +
             score +
-            "</h1>";
+            "</h1>" + "<button class='w3-button w3-black w3-round w3-tiny' onclick='window.location.reload()'>New Game</button>";
 
           for (var p = 0; p < 4; p++) {
             for (var q = 0; q < 4; q++) {
